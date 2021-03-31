@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>face book</title>
+</head>
+	<style>
+		body
+		{
+
+			margin-top:0px;
+			background-color: #dfe2ea;
+			color:blue;
+		}
+		header
+		{
+			background-color:#3b5999;
+			color:white;
+			height:100px;
+			
+		}
+		header h1
+		{
+			margin-top:0px;
+			font-style:bold;
+		}
+		header form
+		{
+            
+			display:flex;
+			align-items:flex-end;
+			justify-content: flex-end;
+			position:relative;
+			top:-30px;
+			right:30px;
+
+
+			/*position:relative;
+			top:-30px;
+			left:900px;*/
+		}
+		table tr td p
+		{
+			margin-right:-420px;
+			border:1px solid black;
+			background-color:rgba(0,0,0,0.2);
+			box-shadow:0 0 5px black;
+			border:none;
+			padding:1px; 
+			position:relative;
+			top:-10px;
+
+		}
+		aside
+		{
+			margin-top:20px;
+			font-size:40px;
+			font-weight:bold;
+			height:80vh;
+			width:800px;
+			float:left;
+		}
+		input[type='text']:focus,input[type='email'],input[type='password'],select
+		{
+			outline:none;
+		}
+		a
+		{
+			text-decoration:none;
+		}
+		#a,#button,#small
+		{
+			outline:none;
+			position:relative;
+			left:108px;
+		}
+	    .move
+	    {
+	    	position:relative;
+	    	left:40px;
+	    }
+	    @media(max-width:700px)
+	    {
+	    	header
+	    	{
+	    		height:200px;
+	    	}
+	        table tr:nth-child(1)
+	    	{
+	    	   display:flex;
+	    	   flex-direction: column;
+
+	        }
+	        table tr:nth-child(2)
+	    	{
+	    	   display:flex;
+	    	   flex-direction: column;
+	    	  
+	        }
+	        table tr:nth-child(3)
+	    	{
+	    	   display:flex;
+	    	   flex-direction: column;
+	    	  
+	        }
+	        table tr:nth-child(4)
+	    	{
+	    	   display:flex;
+	    	   flex-direction: column;
+	    	  
+	        }
+	        table tr:nth-child(5)
+	    	{
+	    	   display:flex;
+	    	   flex-direction: column;
+	        }
+	        td select
+	        {
+	    	   display:flex;
+	    	   flex-direction: column;
+	    	  
+	        }
+	        aside,img
+	        {
+	        	font-size:30px;
+	        	width:460px;
+	        	
+	        }
+
+	    }
+		
+	</style>
+</head>
+<body>
+	<header><h1>facebook</h1>
+		    <form>
+		    	<table>
+		    		<tr>
+		    			<td><label>Email</label></td>
+		    			<td><label>Password</label></td>
+		    		</tr>
+		    	    <tr>
+		    	        <td><input type="email"></td>
+		    	        <td><input type="password"></td>
+		    	        <td><button style="background-color:#5e77a8;outline:none;">Login</button></td>
+		    	    </tr>
+		    	    <tr>
+		    	    	<td><input type="checkbox"><label><small>Keep me logged in</small></label></td>
+                        <td><small>Forgot your password?</small></td>
+		    	    </tr>
+		    	</table>
+		    </form>
+	</header>
+	<aside>Facebook helps you connect and share with the people in your life.
+		   <img src="https://image.shutterstock.com/image-vector/vector-illustration-abstract-social-network-260nw-507791317.jpg"height=300px width=750px style="margin-top:50px">
+	</aside>
+
+	<section>
+		<h1>Sign up</h1>
+		<h3>it's free and always will be.</h3>
+		<form>
+			<table>
+				<tr>
+					<td><label>First Name:</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label>Last Name:</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label>Your Email:</label></td>
+					<td><input type="email"></td>
+				</tr>
+				<tr>
+					<td><label>Re-enter Email:</label></td>
+					<td><input type="email"></td>
+				</tr>
+				<tr>
+					<td><label>New Password:</label></td>
+					<td><input type="password"></td>
+				</tr>
+				<tr>
+					<td><label>gender:</label></td>
+					<td><input type="radio" name="r1">male</td>
+					<td><input type="radio" name="r1">female</td>
+				</tr>
+				<table>
+				<tr>
+					<td><label>Birthday:</label></td>
+					<td class="move"><select>
+						<input type="date" name="">
+					</select></td>
+				</tr>
+			</table>
+			</table>
+			<a id="a" href="#">Why do I need to provide this?</a><br><br>
+			<button id="button" style="background-color:#5ca75a">Sign Up</button><br><br>
+			<small id="small" style="color:black">By Clicking Sign Up,you are indicating that you have read and<br>agree to the <a href="#">Terms of use</a> and <a href="#">Privacy Policy.</a></small>
+		</form>
+	</section>
+</body>
+</html>
